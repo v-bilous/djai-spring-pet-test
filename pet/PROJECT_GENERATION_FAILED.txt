@@ -1,0 +1,167 @@
+An unexpected server error was encountered while generating the project.  See
+the details of the error below.
+
+Generation Log:
+
+Start Generating /
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/domain/NewPet.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/domain/Pet.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/domain/PetAllOf.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/repository/DefaultRepository.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/service/DefaultService.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/controller/api/DefaultApi.kt
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/controller/DefaultController.kt
+Successful write of file /app-pet/src/test/kotlin/test/pet/pet/controller/DefaultApiIT.kt
+Successful write of file /build.gradle.kts
+Successful write of file /settings.gradle.kts
+Successful write of file /gradlew
+Successful write of file /gradlew.bat
+Successful write of file /docker-compose.yml
+Successful write of file /README.md
+Successful write of file /gradle/wrapper/gradle-wrapper.properties
+Successful write of file /gradle/wrapper/gradle-wrapper.jar
+Successful write of file /common/build.gradle.kts
+Successful write of file /common/src/main/kotlin/test/pet/config/WebConfig.kt
+Successful write of file /common/src/main/kotlin/test/pet/constant/EntityState.kt
+Successful write of file /common/src/main/kotlin/test/pet/controller/AbstractController.kt
+Successful write of file /common/src/main/kotlin/test/pet/controller/CommonController.kt
+Successful write of file /common/src/main/kotlin/test/pet/controller/CommonParameterizedController.kt
+Successful write of file /common/src/main/kotlin/test/pet/listener/BaseResourceListener.kt
+Successful write of file /common/src/main/kotlin/test/pet/domain/BaseResource.kt
+Successful write of file /common/src/main/kotlin/test/pet/domain/BaseDomain.kt
+Successful write of file /common/src/main/kotlin/test/pet/exception/InvalidRequestException.kt
+Successful write of file /common/src/main/kotlin/test/pet/exception/ResourceNotFoundException.kt
+Successful write of file /common/src/main/kotlin/test/pet/listener/BaseDomainListener.kt
+Successful write of file /common/src/main/kotlin/test/pet/repository/CommonRepository.kt
+Successful write of file /common/src/main/kotlin/test/pet/service/AbstractService.kt
+Successful write of file /common/src/main/kotlin/test/pet/service/CommonService.kt
+Successful write of file /common/src/main/kotlin/test/pet/config/OpenApiConfig.kt
+Successful write of file /.gitignore
+Successful write of file /.editorconfig
+Successful write of file /gradle.properties
+Successful write of file /.idea/runConfigurations/Application.xml
+Successful write of file /app-pet/src/main/kotlin/test/pet/pet/PetApplication.kt
+Successful write of file /app-pet/src/test/kotlin/test/pet/pet/controller/AbstractIntegrationTest.kt
+Successful write of file /app-pet/src/test/kotlin/test/pet/pet/controller/CommonIntegrationTest.kt
+Successful write of file /app-pet/src/test/resources/application.yml
+Successful write of file /app-pet/src/test/resources/application-testcontainers.yml
+Successful write of file /app-pet/build.gradle.kts
+Successful write of file /app-pet/src/main/resources/application.yml
+Successful write of file /app-pet/src/main/resources/application-dev.yml
+Successful write of file /app-pet/src/main/resources/application-prod.yml
+Successful write of file /app-pet/src/main/resources/hibernate-types.properties
+Successful write of file /app-pet/src/main/resources/liquibase/liquibase-changeLog.xml
+Successful write of file /app-pet/src/main/resources/liquibase/settings.xml
+Successful write of file /app-pet/src/main/resources/liquibase/migrations/generatedChangeLog.xml
+Successful write of file /app-pet/src/main/resources/liquibase/migrations/metadata_data.xml
+Successful write of file /app-pet/src/main/resources/liquibase/migrations/metadata.csv
+Failed with exception java.lang.RuntimeException: Could not generate supporting file '//.openapi-generator-ignore'
+
+
+Server Stack Trace:
+java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: java.lang.RuntimeException: Could not generate supporting file '//.openapi-generator-ignore'
+	at pro.bilous.codegen.exec.ServerMain.start(ServerMain.kt:94)
+	at pro.bilous.codegen.exec.ServerMain.generate(ServerMain.kt:23)
+	at io.apicurio.hub.api.codegen.DjaiCodegen.lambda$generateToStream$0(DjaiCodegen.java:81)
+	at io.apicurio.hub.api.codegen.DjaiCodegen.generateAndPublish(DjaiCodegen.java:135)
+	at io.apicurio.hub.api.codegen.DjaiCodegen_ClientProxy.generateAndPublish(Unknown Source)
+	at io.apicurio.hub.api.rest.impl.DesignsResource.generateAndPublishProject(DesignsResource.java:1450)
+	at io.apicurio.hub.api.rest.impl.DesignsResource.updateCodegenProject(DesignsResource.java:1352)
+	at io.apicurio.hub.api.rest.impl.DesignsResource_ClientProxy.updateCodegenProject(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:249)
+	at io.quarkus.resteasy.runtime.ResteasyFilter.doFilter(ResteasyFilter.java:35)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.apicurio.hub.api.security.QuarkusAuthenticationFilter.doFilter(QuarkusAuthenticationFilter.java:83)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.apicurio.hub.api.filters.DisableCachingFilter.doFilter(DisableCachingFilter.java:66)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.apicurio.hub.api.filters.CorsFilter.doFilter(CorsFilter.java:64)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:63)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:67)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:133)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.DisableCacheHandler.handleRequest(DisableCacheHandler.java:33)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AuthenticationConstraintHandler.handleRequest(AuthenticationConstraintHandler.java:53)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:65)
+	at io.undertow.servlet.handlers.security.ServletSecurityConstraintHandler.handleRequest(ServletSecurityConstraintHandler.java:59)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:247)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:56)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:111)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:108)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.quarkus.undertow.runtime.UndertowDeploymentRecorder$9$1.call(UndertowDeploymentRecorder.java:602)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:227)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleRequest(ServletInitialHandler.java:152)
+	at io.quarkus.undertow.runtime.UndertowDeploymentRecorder$1.handleRequest(UndertowDeploymentRecorder.java:120)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:284)
+	at io.undertow.server.DefaultExchangeHandler.handle(DefaultExchangeHandler.java:18)
+	at io.quarkus.undertow.runtime.UndertowDeploymentRecorder$5$1.run(UndertowDeploymentRecorder.java:417)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$14.runWith(VertxCoreRecorder.java:576)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: java.lang.RuntimeException: Could not generate supporting file '//.openapi-generator-ignore'
+	at pro.bilous.codegen.configurator.ConfiguratorWrapper.generate(ConfiguratorWrapper.kt:56)
+	at org.openapitools.codegen.cmd.Generate.run(Generate.java:417)
+	at pro.bilous.codegen.exec.ServerMain.start(ServerMain.kt:88)
+	... 81 more
+Caused by: java.lang.RuntimeException: Could not generate supporting file '//.openapi-generator-ignore'
+	at org.openapitools.codegen.DefaultGenerator.generateSupportingFiles(DefaultGenerator.java:749)
+	at org.openapitools.codegen.DefaultGenerator.generate(DefaultGenerator.java:882)
+	at pro.bilous.codegen.core.ZipGenerateInvoker.invoke(ZipGenerateInvoker.kt:11)
+	at pro.bilous.codegen.configurator.ConfiguratorWrapper.generateOne(ConfiguratorWrapper.kt:75)
+	at pro.bilous.codegen.configurator.ConfiguratorWrapper.generate(ConfiguratorWrapper.kt:52)
+	... 83 more
+Caused by: java.io.FileNotFoundException: /tmp/template-repos/djai-codegen-templates/1688145802800/embed/.openapi-generator-ignore (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at org.openapitools.codegen.TemplateManager.getInputStream(TemplateManager.java:145)
+	at org.openapitools.codegen.TemplateManager.write(TemplateManager.java:171)
+	at org.openapitools.codegen.DefaultGenerator.processTemplateToFile(DefaultGenerator.java:1017)
+	at pro.bilous.codegen.core.InCodeGenerator.processTemplateToFile(InCodeGenerator.kt:56)
+	at org.openapitools.codegen.DefaultGenerator.generateSupportingFiles(DefaultGenerator.java:741)
+	... 87 more

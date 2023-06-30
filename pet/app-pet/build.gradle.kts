@@ -20,7 +20,7 @@ dependencies {
 	}
 	testImplementation("org.testcontainers:junit-jupiter:1.14.3")
 	testImplementation("org.testcontainers:mysql:1.14.3")
-	testImplementation("com.h2database:h2:1.4.200")
+	implementation("com.h2database:h2:1.4.200")
 	testImplementation(kotlin("test"))
 	testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
 }
