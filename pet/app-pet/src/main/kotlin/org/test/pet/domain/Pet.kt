@@ -1,6 +1,6 @@
 package org.test.pet.domain
 
-import org.test.domain.BaseDomain
+import org.test.domain.BaseResource
 import org.test.pet.domain.NewPet
 import org.test.pet.domain.PetAllOf
 import com.fasterxml.jackson.annotation.*
@@ -27,5 +27,5 @@ data class Pet(
 	@Column(name = "tag")
 	var tag: String?
 
-) : BaseDomain()
+) : BaseResource()
 

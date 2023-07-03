@@ -32,7 +32,7 @@ Successful write of file /common/src/main/kotlin/org/test/listener/BaseDomainLis
 Successful write of file /common/src/main/kotlin/org/test/repository/CommonRepository.kt
 Successful write of file /common/src/main/kotlin/org/test/service/AbstractService.kt
 Successful write of file /common/src/main/kotlin/org/test/service/CommonService.kt
-Successful write of file /common/src/main/kotlin/org/test/config/SpringFoxConfig.kt
+Successful write of file /common/src/main/kotlin/org/test/config/OpenApiConfig.kt
 Successful write of file /.gitignore
 Successful write of file /.editorconfig
 Successful write of file /gradle.properties
