@@ -78,7 +78,6 @@ class DefaultApiIT : AbstractIntegrationTest<NewPet>() {
 		val savedRes2 = repository.save(res2)
 
 		val params = LinkedMultiValueMap<String, String>()
-		params["sort"] = "entity.history.createdDate"
 		val result = super.findAll(url, params)
 
 		resourceAsserts(savedRes1, result, 0)
