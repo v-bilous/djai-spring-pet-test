@@ -18,7 +18,7 @@ plugins {
 }
 
 allprojects {
-	group = "org.test"
+	group = "org"
 	version = "0.0.1"
 
 	repositories {
