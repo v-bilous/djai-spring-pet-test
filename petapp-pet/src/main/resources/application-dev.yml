@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:~/data/test_pet;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: ${DB_USER:root}
+    password: ${DB_PASS:Qw123456}
