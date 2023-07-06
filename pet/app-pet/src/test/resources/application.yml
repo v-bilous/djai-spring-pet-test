@@ -20,5 +20,5 @@ spring:
     change-log: classpath:/liquibase/liquibase-changeLog.xml
 
 server:
-  port: 1//petstore.swagger.io/api
+  port: 18080
   address: localhost

@@ -19,18 +19,10 @@
 				<constraints nullable="false"/>
 			</column>
 			<column name="tag" type="VARCHAR(255)" />
-		</createTable>
-	</changeSet>
-	<changeSet author="CodeGeneration" id="create_generated_table_pet_all_of" labels="version:">
-		<preConditions onFail="MARK_RAN">
-			<not>
-				<tableExists tableName="pet_all_of" />
-			</not>
-		</preConditions>
-		<createTable tableName="pet_all_of">
-			<column name="id" type="${UUID}">
-				<constraints nullable="false" primaryKey="true"/>
-			</column>
+			<column name="created_by" type="VARCHAR(255)"/>
+			<column name="updated_by" type="VARCHAR(255)"/>
+			<column name="created_on" type="int"/>
+			<column name="updated_on" type="int"/>
 		</createTable>
 	</changeSet>
 
