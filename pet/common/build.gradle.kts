@@ -10,11 +10,12 @@ dependencies {
 	implementation(kotlin("stdlib-jdk8"))
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-	api("io.springfox:springfox-boot-starter:3.0.0")
+	api("org.springdoc:springdoc-openapi-ui:1.7.0")
+	api("org.springdoc:springdoc-openapi-kotlin:1.7.0")
+	api("org.springdoc:springdoc-openapi-data-rest:1.7.0")
 	api("com.vladmihalcea:hibernate-types-52:2.11.1")
 	api("com.fasterxml.jackson.module:jackson-module-kotlin")
 
-	implementation("io.springfox:springfox-swagger-ui:3.0.0")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
